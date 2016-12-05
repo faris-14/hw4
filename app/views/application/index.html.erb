@@ -1,0 +1,8 @@
+<p>Tweets:</p>
+
+<ul>
+<% ApplicationController.tweets.each do |tweet| %>
+    <li><%= tweet.text %></li>
+<% end %>
+</ul>
+
