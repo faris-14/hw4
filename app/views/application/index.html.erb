@@ -1,8 +1,7 @@
-<p>Tweets:</p>
-
-<ul>
-<% ApplicationController.tweets.each do |tweet| %>
-    <li><%= tweet.text %></li>
+<%= form_tag('/search', method: 'post') do %>
+    <p>
+        <%= label_tag(:q, 'Search for tweets:') %>
+        <%= text_field_tag(:q) %>
+    </p>
+    <%= submit_tag('Search') %>
 <% end %>
-</ul>
-

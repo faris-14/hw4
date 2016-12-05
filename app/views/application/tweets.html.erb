@@ -1,0 +1,7 @@
+<p><%= link_to 'Go back', '/' %></p>
+<ul>
+<% Tweet.all.each do |tweet| %>
+    <li><img src="<%= tweet.avatar %>"><strong><%= tweet.name %> at <%= tweet.time %></strong> <%= tweet.content %></li>
+<% end %>
+</ul>
+
