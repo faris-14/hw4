@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Rails Version
+  Rails 5.0.0.1
 
-* Ruby version
+# Ruby Version
+  Ruby 2.3.1
 
-* System dependencies
+# Database
+  MySQL
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Run Gemfile
+	bundle install
+  
+# Create Database
+	rails db:create
+  
+# Run Migrations
+	rails db:migrate
+  
+# Run Seed File
+  Seed Data for storing the rooms category and rooms information to the database
+	rails db:seed
+ 
+# Start Server
+	rails s
